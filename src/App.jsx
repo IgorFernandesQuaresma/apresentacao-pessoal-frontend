@@ -40,13 +40,10 @@ return (
 
             <section id="contato">
             <div className="contato__textos">
-                <h1>Me contate</h1>
+                <h1>Habilidades</h1>
                 <div className="contato__paragrafo">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore asperiores deleniti, explicabo ullam, ratione blanditiis similique,
-                    nobis laborum sunt pariatur deserunt!
-                    Saepe error dolor expedita dignissimos illum natus dolorum commodi.
+                Tecnológicas: HTML, CSS, Bootstrap, Scss, Node.js, MySQL, JavaScript, React, Nest.js, WordPress, Metodologias Ágeis
                 </p>
                 </div>
 
