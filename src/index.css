@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  
 }
 
 h1 {
@@ -54,6 +55,13 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+:root {
+  --roxo-escuro: #441f88;
+  --roxo-claro: #5c20c6;
+  --branco: #f9f9f9;
+  --cinza: #cccccc;
+  --preto: #171717;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

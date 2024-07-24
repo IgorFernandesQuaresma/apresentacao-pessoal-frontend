@@ -1,16 +1,73 @@
+import React from 'react';
+import './App.css';
+import astronauta from '../public/astronauta.svg';
+import githubIcon from '../public/github.svg';
+import instagramIcon from '../public/instagram.svg';
+import linkedinIcon from '../public/linkedin.svg';
+import Footer from './components/footer/Footer';
 
-import './App.css'
 
 function App() {
+return (
+        <>
+        <main>
+            <section id="aboutMe">
+            <div className="aboutMe__img">
+                <img className="aboutMe__img_link" src={astronauta} alt="Capacete de astronauta" width="200" height="200" />
+            </div>
 
-  return (
-    <>
-      <main>
-        <h1>Seja bem vindo! :)</h1>
-        <p>Desafio de apresentação Pessoal do Projeto Frontend fusion</p>
-      </main>
-    </>
-  );
+            <div className="aboutMe__sobre">
+                <h1>Quem sou eu</h1>
+                <div>
+                <p className="aboutMe__sobre__paragrafo">
+                Desenvolvedor full stack com sólida experiência em tecnologias como JavaScript, 
+                HTML, CSS, TypeScript, MySQL, Bootstrap, Scss, Node, React e Metodologias Ágeis. 
+                Experiência prévia como Gerente de Restaurantes, 
+                desenvolvendo habilidades de gestão de equipes e comunicação. 
+                Perfil comunicativo, resiliente e persistente, 
+                com capacidade para superar obstáculos e manter uma comunicação assertiva.
+                </p>
+                <div className="aboutMe__sobre__botoes">
+                    <button className="aboutMe__sobre__btn">
+                    <a className="aboutMe__sobre__btn__link" href="https://github.com/IgorFernandesQuaresma" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </button>
+                    <h2 className="seguidores"></h2>
+                    <h2 className="seguindo"></h2>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <section id="contato">
+            <div className="contato__textos">
+                <h1>Me contate</h1>
+                <div className="contato__paragrafo">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore asperiores deleniti, explicabo ullam, ratione blanditiis similique,
+                    nobis laborum sunt pariatur deserunt!
+                    Saepe error dolor expedita dignissimos illum natus dolorum commodi.
+                </p>
+                </div>
+
+                <div className="contato__icones">
+                <a href="https://github.com/IgorFernandesQuaresma" target="_blank" rel="noopener noreferrer">
+                    <img src={githubIcon} alt="Icone do GitHub" />
+                </a>
+                <a href="https://www.instagram.com/ifernandes.q" target="_blank" rel="noopener noreferrer">
+                    <img src={instagramIcon} alt="Icone do Instagram" />
+                </a>
+                <a href="https://www.linkedin.com/in/ifernandesq" target="_blank" rel="noopener noreferrer">
+                    <img src={linkedinIcon} alt="Icone do Linkedin" />
+                </a>
+                </div>
+            </div>
+            </section>
+        </main>
+
+        <Footer />
+        </>
+);
 }
 
-export default App
+export default App;
